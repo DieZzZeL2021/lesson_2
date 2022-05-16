@@ -1,0 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+}
