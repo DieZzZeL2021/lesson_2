@@ -1,13 +1,172 @@
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  color: #ffffff;
 }
 
 html {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  overflow-y: scroll;
+  font-weight: 300;
+  line-height: 1.25;
 }
 
+
 h1 {
-  margin: 0;
-  font-family: "Roboto Slab", serif;
+  padding-top: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+li {
+  /* list-style: none; */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #8113A0;
+}
+
+
+.header-container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100px;
+}
+
+.header-navbar__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.header-navbar__item {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: 1px solid black;
+}
+
+.header-navbar__item:last-of-type {
+  border-right: none;
+}
+
+.header-navbar__link {
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+
+}
+
+.header-navbar__link:hover {
+  text-decoration: underline;
+}
+
+.header-navbar__link--active {
+  color: black;
+}
+
+.content {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #e5dddd;
+  background-image: url(../img/bg-small.png), url(../img/bg-image.jpeg);
+  background-position: right top 110px, 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 10%, cover;
+}
+
+.content-container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1280px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.underline {
+  border-bottom: 2px dotted #ffffff;
+}
+
+.art-bg {
+  background-color: #B96BD0;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.read_more {
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color 1s;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #89DE14;
+}
+
+.read_more:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.to-comments {
+  color: #BFBFBF;
+  font-weight: 500;
+  transition: color 1s;
+  font-style: italic;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+
+.to-comments:hover {
+  color: black;
+}
+
+
+.art-title {
+  text-align: center;
+}
+
+.art-first__letter::first-letter {
+  font-size: 2rem;
+  color: #CD1264;
+}
+
+.catalog-list {
+  list-style: url(../img/flower.ico);
+}
+
+.footer {
+  min-height: 40px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #8113A0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copywrite {
+  color: #ffffff;
+  font-size: 1.2rem;
 }
