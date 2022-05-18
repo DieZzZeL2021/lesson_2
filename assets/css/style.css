@@ -30,8 +30,9 @@ h1 {
 }
 
 h2 {
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
 }
 
 h2 a {
