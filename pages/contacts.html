@@ -50,6 +50,28 @@
 		<div class="content-container">
 			<h1>Контакты</h1>
 
+			<div class="content-contacts__container">
+				<figure>
+					<figcaption class="contacts__figcaption">Схема проезда</figcaption>
+					<div><img class="map" src="../assets/img/Схема_проезда.jpg" alt="Схема проезда" height="350" width="380">
+					</div>
+					<span class="contacts__title">Наш адрес: <br> г. Киев м. Позняки <br> ул. Михаила Гришко Офис № 246</span>
+				</figure>
+
+				<form action="contacts.php" method="get">
+					<fieldset>
+						<legend>Форма обратной связи</legend>
+						<div class="form-group"><label>Фамилия, Имя, Отчество<input type="text" name="lgn" placeholder="Логин"
+									minlength="3" maxlength="25" value="user"></label></div>
+						<div class="form-group"><label>Телефон<input type="tel" name="tel" placeholder="Телефон"></label></div>
+						<div class="form-group"><label>Электронная почта<input type="email" name="email"></label></div>
+						<div class="form-group">
+							<label for="txt">Задайте свой вопрос</label>
+							<textarea name="txt" id="txt" cols="50" rows="5" placeholder="Введите много текста......"></textarea>
+						</div>
+					</fieldset>
+				</form>
+			</div>
 		</div>
 	</div>
 

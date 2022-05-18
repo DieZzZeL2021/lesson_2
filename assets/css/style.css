@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  color: #ffffff;
 }
 
 html {
@@ -9,11 +8,13 @@ html {
   overflow-y: scroll;
   font-weight: 300;
   line-height: 1.25;
+  color: #ffffff;
 }
 
 
 h1 {
-  padding-top: 20px;
+  margin: 0;
+  padding-top: 40px;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -34,12 +35,62 @@ li {
   list-style: none;
 }
 
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: #B96BD0;
+  font-size: 1.1rem;
+}
+
+legend {
+  transform: translateY(-10px);
+  color: #89DE14;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="image"] {
+  padding: 10px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+}
+
 .header {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   background-color: #8113A0;
+  z-index: 10;
 }
 
 .header-container {
@@ -84,8 +135,8 @@ li {
 }
 
 .content {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 40px;
   background-color: #e5dddd;
   background-image: url(../img/bg-small.png), url(../img/bg-image.jpeg);
   background-position: right top 110px, 50% 50%;
@@ -94,7 +145,7 @@ li {
 }
 
 .content-container {
-  min-height: max-content;
+  min-height: calc(100vh - 140px);
   width: 100%;
   max-width: 1280px;
   padding-right: 20px;
@@ -153,9 +204,11 @@ li {
 }
 
 .content-list {
-  width: 450px;
+  max-width: 450px;
   background-color: #8113A0;
   border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content-item__icon1,
@@ -205,6 +258,54 @@ li {
   font-weight: 600;
 }
 
+.bg-texture {
+  min-height: 100vh;
+  background-color: #e5dddd;
+  background-image: url(../img/bg_textura.jpeg);
+  background-position: 50% 50%;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.content-galery__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: auto;
+  align-items: center;
+}
+
+.slide__image {
+  border: 4px solid #89DE14;
+  border-radius: 10px;
+}
+
+.slide__image:hover {
+  border-color: transparent;
+}
+
+.slide__title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.content-contacts__container {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  min-width: 768px;
+}
+
+.contacts__figcaption {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contacts__title {
+  font-size: 1.2rem;
+}
 
 .footer {
   min-height: 40px;
@@ -216,6 +317,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .footer__copywrite {
