@@ -11,6 +11,13 @@ html {
   color: #ffffff;
 }
 
+body {
+  background-color: #e5dddd;
+  background-image: url(../img/bg-small.png), url(../img/bg-image.jpeg);
+  background-position: right top 110px, 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 10%, cover;
+}
 
 h1 {
   margin: 0;
@@ -54,6 +61,10 @@ input {
   padding: 10px 20px;
 }
 
+input[name="lgn"] {
+  text-transform: capitalize;
+}
+
 input[type="image"] {
   padding: 10px 0;
 }
@@ -61,6 +72,10 @@ input[type="image"] {
 input[type="radio"],
 input[type="checkbox"] {
   width: auto;
+}
+
+.dotted-frame:hover {
+  outline: 2px dotted black;
 }
 
 textarea {
@@ -135,13 +150,9 @@ textarea {
 }
 
 .content {
-  padding-top: 80px;
-  padding-bottom: 40px;
-  background-color: #e5dddd;
-  background-image: url(../img/bg-small.png), url(../img/bg-image.jpeg);
-  background-position: right top 110px, 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 10%, cover;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .content-container {
@@ -277,7 +288,7 @@ textarea {
 }
 
 .slide__image {
-  border: 4px solid #89DE14;
+  border: 4px solid #CD1264;
   border-radius: 10px;
 }
 
@@ -293,9 +304,8 @@ textarea {
 
 .content-contacts__container {
   display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-  min-width: 768px;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-around;
 }
 
 .contacts__figcaption {
@@ -305,6 +315,15 @@ textarea {
 
 .contacts__title {
   font-size: 1.2rem;
+}
+
+
+.content-navbar__list {
+  display: flex;
+}
+
+.content-navbar__link {
+  padding-right: 20px;
 }
 
 .footer {
@@ -318,6 +337,13 @@ textarea {
   justify-content: center;
   align-items: center;
   z-index: 10;
+}
+
+.anchor {
+  position: relative;
+  top: -150px;
+  z-index: 100;
+
 }
 
 .footer__copywrite {
