@@ -331,6 +331,9 @@ textarea {
 
 .content-navbar__link {
   padding-right: 20px;
+  font-size: 1.2rem;
+  color: #BFBFBF;
+  font-weight: 400;
 }
 
 .footer {
