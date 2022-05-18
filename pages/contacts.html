@@ -2,91 +2,91 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="../assets/css/normalize.css">
-	<link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-	<header class="header">
-		<div class="header-container">
-			<nav class="header-navbar">
-				<ul class="header-navbar__list">
-					<li class="header-navbar__item">
-						<a href="../index.html" class="header-navbar__link">Главная</a>
-					</li>
-					<li class="header-navbar__item">
-						<a href="articles.html" class="header-navbar__link">Статьи</a>
-					</li>
-					<li class="header-navbar__item">
-						<a href="catalog.html" class="header-navbar__link">Каталог</a>
-					</li>
-					<li class="header-navbar__item">
-						<a href="contacts.html" class="header-navbar__link header-navbar__link--active">Контакты</a>
-					</li>
-					<li class="header-navbar__item">
-						<a href="gallery.html" class="header-navbar__link">Галерея</a>
-					</li>
-					<li class="header-navbar__item">
-						<a href="page-nav.html" class="header-navbar__link">Навигация</a>
-					</li>
-					<li class="header-navbar__item">
-						<a href="registration.html" class="header-navbar__link">Регистрация</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+  <header class="header">
+    <div class="header-container">
+      <nav class="header-navbar">
+        <ul class="header-navbar__list">
+          <li class="header-navbar__item">
+            <a href="../index.html" class="header-navbar__link">Главная</a>
+          </li>
+          <li class="header-navbar__item">
+            <a href="articles.html" class="header-navbar__link">Статьи</a>
+          </li>
+          <li class="header-navbar__item">
+            <a href="catalog.html" class="header-navbar__link">Каталог</a>
+          </li>
+          <li class="header-navbar__item">
+            <a href="contacts.html" class="header-navbar__link header-navbar__link--active">Контакты</a>
+          </li>
+          <li class="header-navbar__item">
+            <a href="gallery.html" class="header-navbar__link">Галерея</a>
+          </li>
+          <li class="header-navbar__item">
+            <a href="page-nav.html" class="header-navbar__link">Навигация</a>
+          </li>
+          <li class="header-navbar__item">
+            <a href="registration.html" class="header-navbar__link">Регистрация</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-	<div class="content">
-		<div class="content-container">
-			<h1>Контакты</h1>
+  <div class="content">
+    <div class="content-container">
+      <h1>Контакты</h1>
 
-			<div class="content-contacts__container">
-				<figure>
-					<figcaption class="contacts__figcaption">Схема проезда</figcaption>
-					<div><img class="map" src="../assets/img/Схема_проезда.jpg" alt="Схема проезда" height="450" width="400">
-					</div>
-					<span class="contacts__title">Наш адрес: <br> г. Киев м. Позняки <br> ул. Михаила Гришко Офис № 246</span>
-				</figure>
+      <div class="content-contacts__container">
+        <figure>
+          <figcaption class="contacts__figcaption">Схема проезда</figcaption>
+          <div><img class="map" src="../assets/img/Схема_проезда.jpg" alt="Схема проезда" height="450" width="400">
+          </div>
+          <span class="contacts__title">Наш адрес: <br> г. Киев м. Позняки <br> ул. Михаила Гришко Офис № 246</span>
+        </figure>
 
-				<form action="contacts.php" method="get">
-					<fieldset>
-						<legend>Форма обратной связи</legend>
-						<div class="form-group"><label>Фамилия, Имя, Отчество<input type="text" name="lgn" placeholder="Логин"
-									minlength="3" maxlength="25"></label></div>
-						<div class="form-group"><label>Телефон<input type="tel" name="tel" placeholder="Телефон"></label></div>
-						<div class="form-group"><label>Электронная почта<input type="email" name="email"></label></div>
-						<div class="form-group">
-							<label for="txt">Задайте свой вопрос</label>
-							<textarea name="txt" id="txt" cols="50" rows="5" placeholder="Введите много текста......"></textarea>
-						</div>
-					</fieldset>
-					<fieldset>
-						<legend>#5 Кнопки Управления формой</legend>
-						<div class="form-group">
-							<button class="btn" type="submit">Зарегестрироваться</button>
-						</div>
-						<div class="form-group">
-							<button class="btn" type="reset">Очистить форму</button>
-						</div>
-					</fieldset>
-				</form>
-			</div>
-		</div>
-	</div>
+        <form action="contacts.php" method="get">
+          <fieldset>
+            <legend>Форма обратной связи</legend>
+            <div class="form-group"><label>Фамилия, Имя, Отчество<input type="text" name="lgn" placeholder="Логин"
+                  minlength="3" maxlength="25"></label></div>
+            <div class="form-group"><label>Телефон<input type="tel" name="tel" placeholder="Телефон"></label></div>
+            <div class="form-group"><label>Электронная почта<input type="email" name="email"></label></div>
+            <div class="form-group">
+              <label for="txt">Задайте свой вопрос</label>
+              <textarea name="txt" id="txt" cols="50" rows="5" placeholder="Введите много текста......"></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>#5 Кнопки Управления формой</legend>
+            <div class="form-group">
+              <button class="btn" type="submit">Зарегестрироваться</button>
+            </div>
+            <div class="form-group">
+              <button class="btn" type="reset">Очистить форму</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
 
-	<footer class="footer">
-		<span class="footer-copywrite">&copy;Anatoliy Sysoenko</span>
-	</footer>
+  <footer class="footer">
+    <span class="footer-copywrite">&copy;Anatoliy Sysoenko</span>
+  </footer>
 </body>
 
 </html>
