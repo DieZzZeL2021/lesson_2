@@ -281,7 +281,7 @@ textarea {
   background-size: cover;
 }
 
-.content-galery__container {
+.content-gallery__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
