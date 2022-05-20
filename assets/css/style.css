@@ -36,6 +36,10 @@ h2 {
   font-family: 'Roboto Slab', serif;
 }
 
+h2 a {
+  color: #89DE14;
+}
+
 a {
   text-decoration: none;
   color: #ffffff;
@@ -215,6 +219,12 @@ textarea {
   color: #CD1264;
   font-weight: 500;
   font-style: italic;
+}
+
+.content-article__comments {
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .content-list {
