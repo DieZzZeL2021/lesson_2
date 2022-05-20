@@ -176,10 +176,10 @@ textarea {
   border-bottom: 2px dotted #ffffff;
 }
 
-.content-text__bg {
+.content-articles__bg {
   background-color: #B96BD0;
   border-radius: 10px;
-  padding: 5px;
+  padding: 0 10px;
 }
 
 .content-text__link-more {
