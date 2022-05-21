@@ -17,131 +17,130 @@
 
 <body>
   <header class="header">
-    <div class="header-container">
+    <div class="container">
       <nav class="header-navbar">
         <ul class="header-navbar__list">
           <li class="header-navbar__item">
             <a href="../index.html" class="header-navbar__link">Главная</a>
           </li>
           <li class="header-navbar__item">
-            <a href="articles.html" class="header-navbar__link">Статьи</a>
+            <a href="../pages/articles.html" class="header-navbar__link">Статьи</a>
           </li>
           <li class="header-navbar__item">
-            <a href="catalog.html" class="header-navbar__link">Каталог</a>
+            <a href="../pages/catalog.html" class="header-navbar__link">Каталог</a>
           </li>
           <li class="header-navbar__item">
-            <a href="contacts.html" class="header-navbar__link">Контакты</a>
+            <a href="../pages/contacts.html" class="header-navbar__link">Контакты</a>
           </li>
           <li class="header-navbar__item">
-            <a href="gallery.html" class="header-navbar__link">Галерея</a>
+            <a href="../pages/gallery.html" class="header-navbar__link">Галерея</a>
           </li>
           <li class="header-navbar__item">
-            <a href="page-nav.html" class="header-navbar__link">Навигация</a>
+            <a href="../pages/page-nav.html" class="header-navbar__link">Навигация</a>
           </li>
           <li class="header-navbar__item">
-            <a href="registration.html" class="header-navbar__link header-navbar__link--active">Регистрация</a>
+            <a href="../pages/registration.html"
+              class="header-navbar__link  header-navbar__link--active">Регистрация</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <div class="content ">
-    <div class="content-container">
-      <h1>Регистрация</h1>
+  <div class="content container">
+    <h1>Регистрация</h1>
 
-      <form action="register.php" method="get">
-        <fieldset>
-          <legend>#1 Базовые поля ввода</legend>
-          <div class="form-group">
-            <label>Добавьте фотографию
-              <input type="image" alt="photo" name="img">
-            </label>
-          </div>
-          <div class="form-group">
-            <label>Фамилия, Имя, Отчество
-              <input type="text" name="lgn" placeholder="Логин" minlength="3" maxlength="25">
-            </label>
-          </div>
-          <div class="form-group">
-            <label>Адрес электронной почты
-              <input type="email" name="email" placeholder="Имейл">
-            </label>
-          </div>
-          <div class="form-group">
-            <label>Пароль
-              <input type="password" name="psw" placeholder="Пароль">
-            </label>
-          </div>
-          <div class="form-group">
-            <label>Адрес сайта
-              <input type="url" name="url" placeholder="Адрес сайта" value="https://mysite.name">
-            </label>
-          </div>
-          <div class="form-group">
-            <label>Выбрать дату рождения
-              <input type="date" name="date">
-            </label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>#2 Единственный выбор</legend>
-          <div>Выбрать пол</div>
-          <div class="form-group-sm dotted-frame">
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Мужской</label>
-          </div>
-          <div class="form-group-sm dotted-frame">
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Женский</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>#3 Множественный выбор</legend>
-          <div>Выбрать предпочитаемую кухню</div>
-          <div class="form-group-sm dotted-frame">
-            <input type="checkbox" name="kit" id="ua" value="ua">
-            <label for="ua">Украинская</label>
-          </div>
-          <div class="form-group-sm dotted-frame">
-            <input type="checkbox" name="kit" id="it" value="it">
-            <label for="it">Итальянская</label>
-          </div>
-          <div class="form-group-sm dotted-frame">
-            <input type="checkbox" name="kit" id="kav" value="kav">
-            <label for="kav">Кавказская</label>
-          </div>
-          <div class="form-group-sm dotted-frame">
-            <input type="checkbox" name="kit" id="eu" value="eu">
-            <label for="eu">Европейская</label>
-          </div>
-          <div class="form-group-sm dotted-frame">
-            <input type="checkbox" name="kit" id="jp" value="jp">
-            <label for="jp">Японская</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>#4 Многострочное поле</legend>
-          <div class="form-group">
-            <label for="txt">О себе в произвольной форме</label>
-            <textarea name="txt" id="txt" cols="50" rows="5" placeholder="Введите много текста......"></textarea>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>#5 Кнопки Управления формой</legend>
-          <div class="form-group">
-            <button class="btn" type="submit">Зарегестрироваться</button>
-          </div>
-          <div class="form-group">
-            <button class="btn" type="reset">Очистить форму</button>
-          </div>
-        </fieldset>
-      </form>
-    </div>
+    <form action="register.php" method="get">
+      <fieldset>
+        <legend>#1 Базовые поля ввода</legend>
+        <div class="form-group">
+          <label>Добавьте фотографию
+            <input type="image" alt="photo" name="img">
+          </label>
+        </div>
+        <div class="form-group">
+          <label>Фамилия, Имя, Отчество
+            <input type="text" name="lgn" placeholder="Логин" minlength="3" maxlength="25">
+          </label>
+        </div>
+        <div class="form-group">
+          <label>Адрес электронной почты
+            <input type="email" name="email" placeholder="Имейл">
+          </label>
+        </div>
+        <div class="form-group">
+          <label>Пароль
+            <input type="password" name="psw" placeholder="Пароль">
+          </label>
+        </div>
+        <div class="form-group">
+          <label>Адрес сайта
+            <input type="url" name="url" placeholder="Адрес сайта" value="https://mysite.name">
+          </label>
+        </div>
+        <div class="form-group">
+          <label>Выбрать дату рождения
+            <input type="date" name="date">
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>#2 Единственный выбор</legend>
+        <div>Выбрать пол</div>
+        <div class="form-group-sm dotted-frame">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Мужской</label>
+        </div>
+        <div class="form-group-sm dotted-frame">
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Женский</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>#3 Множественный выбор</legend>
+        <div>Выбрать предпочитаемую кухню</div>
+        <div class="form-group-sm dotted-frame">
+          <input type="checkbox" name="kit" id="ua" value="ua">
+          <label for="ua">Украинская</label>
+        </div>
+        <div class="form-group-sm dotted-frame">
+          <input type="checkbox" name="kit" id="it" value="it">
+          <label for="it">Итальянская</label>
+        </div>
+        <div class="form-group-sm dotted-frame">
+          <input type="checkbox" name="kit" id="kav" value="kav">
+          <label for="kav">Кавказская</label>
+        </div>
+        <div class="form-group-sm dotted-frame">
+          <input type="checkbox" name="kit" id="eu" value="eu">
+          <label for="eu">Европейская</label>
+        </div>
+        <div class="form-group-sm dotted-frame">
+          <input type="checkbox" name="kit" id="jp" value="jp">
+          <label for="jp">Японская</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>#4 Многострочное поле</legend>
+        <div class="form-group">
+          <label for="txt">О себе в произвольной форме</label>
+          <textarea name="txt" id="txt" cols="50" rows="5" placeholder="Введите много текста......"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>#5 Кнопки Управления формой</legend>
+        <div class="form-group">
+          <button class="btn" type="submit">Зарегестрироваться</button>
+        </div>
+        <div class="form-group">
+          <button class="btn" type="reset">Очистить форму</button>
+        </div>
+      </fieldset>
+    </form>
   </div>
 
   <footer class="footer">
-    <span class="footer-copywrite">&copy;Anatoliy Sysoenko</span>
+    <span class="footer-copywrite container">&copy;Anatoliy Sysoenko</span>
   </footer>
 </body>
 
